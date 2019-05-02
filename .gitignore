@@ -1,0 +1,4 @@
+/nodemodules
+.env
+webpack.config.js
+.git
