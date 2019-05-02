@@ -69,7 +69,7 @@ function connectSocket(event) {
 
     redrawChart();
 
-    socket = io.connect('https://sleepy-ravine-85439.herokuapp.com',{'forceNew':true});
+    socket = io.connect(window.location.hostname,{'forceNew':true});
     socket.emit('term', {term: term});
 
     socket.on('sentdata', function(data) {
@@ -80,7 +80,7 @@ function connectSocket(event) {
     });
 
   } else {
-    socket = io.connect('https://sleepy-ravine-85439.herokuapp.com',{'forceNew':true});
+    socket = io.connect(window.location.hostname,{'forceNew':true});
     socket.emit('term', {term: term});
     socket.on('sentdata', function(data) {
       time = new Date().toLocaleTimeString();
