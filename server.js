@@ -41,7 +41,6 @@ async function getTermScore(term="Trump") {
     q: term,
     count: 10
   }).then(data => data.data.statuses.map(status => status.text)).filter(status => status.includes(term))
-  console.log(tweetList);
   if (tweetList.length < 1) {
     results = {"sentimentScore": 0, "tweets": []}
   } else {
@@ -77,7 +76,6 @@ let tweetInterval = null;
 
 
   socket.on('disconnect', (data) => {
-    console.log(`${socket.id} has disconnected`)
     clearInterval(tweetInterval);
   })
 });
