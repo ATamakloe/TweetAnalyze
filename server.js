@@ -19,8 +19,8 @@ const T = new Twit({
 
 const nlp = new nlpWatson({
   version: '2018-11-16',
-  iam_apikey: process.env.WATSONKEY;,
-  url: process.env.WATSONURL;
+  iam_apikey: process.env.WATSONKEY,
+  url: process.env.WATSONURL,
 });
 
 server.listen(port)
