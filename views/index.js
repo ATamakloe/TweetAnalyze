@@ -69,7 +69,7 @@ function connectSocket(event) {
 
     redrawChart();
 
-    socket = io.connect(window.location.hostname,{'forceNew':true});
+    socket = io.connect(window.location.hostname,{'forceNew':true, "transports": ["xhr-polling"], "polling duration": 10});
     socket.emit('term', {term: term});
 
     socket.on('sentdata', function(data) {
@@ -80,7 +80,7 @@ function connectSocket(event) {
     });
 
   } else {
-    socket = io.connect(window.location.hostname,{'forceNew':true});
+    socket = io.connect(window.location.hostname,{'forceNew':true, "transports": ["xhr-polling"], "polling duration": 10});
     socket.emit('term', {term: term});
     socket.on('sentdata', function(data) {
       time = new Date().toLocaleTimeString();

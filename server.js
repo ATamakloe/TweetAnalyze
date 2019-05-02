@@ -60,10 +60,7 @@ async function getTermScore(term="Trump") {
   return results;
 }
 
-io.configure(() => { 
-  io.set("transports", ["xhr-polling"]);
-  io.set("polling duration", 10);
-});
+
 
 io.on('connection', (socket) => {
   console.log(`${socket.id} has connected`)
