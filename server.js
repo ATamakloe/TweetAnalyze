@@ -9,12 +9,12 @@ require('dotenv').config()
 
 
 const T = new Twit({
-    consumer_key:         process.env.CONSUMER_KEY,
-    consumer_secret:      process.env.CONSUMER_SECRET,
-    access_token:         process.env.ACCESS_TOKEN,
-    access_token_secret:  process.env.ACCESS_TOKEN_SECRET,
-    timeout_ms:           60*1000,
-    strictSSL:            true,
+    consumer_key:'JhNOZghCdH6drNNh8yX7JrsWg',
+    consumer_secret:'2TFhbSVP7flZ1R88LaqWIJmHixOYyYVlek3aTcpWkNv4BD0nDX',
+    access_token:'385219659-EOHwI6QJW3nZnpJE6cgVBDsHRJR7bgryKVD6trXC',
+    access_token_secret:'YmORtry99TAHXzhCKIAPg5jA2JL5vL0TBhSAEKxam7sVK',
+    timeout_ms:60*1000,
+    strictSSL:true,
   })
 
 const nlp = new nlpWatson({
