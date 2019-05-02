@@ -58,12 +58,14 @@ main {
 }
 
 #searchbutton {
-  width            : 4em;
-  height           : 3em;
-  margin-left      : -4px;
-  border           : none;
-  background-color : var(--light-blue);
-  order            : 2;
+  -webkit-appearance : none;
+  width              : 4em;
+  height             : 3em;
+  margin-left        : -4px;
+  border             : none;
+  border-radius      : 0;
+  background-color   : var(--light-blue);
+  order              : 2;
 }
 
 #searchbutton:hover {
