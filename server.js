@@ -19,8 +19,8 @@ const T = new Twit({
 
 const nlp = new nlpWatson({
   version: '2018-11-16',
-  iam_apikey: process.env.WATSONKEY,
-  url: process.env.WATSONURL,
+  iam_apikey: 'abY4y2X8N8_PkbJk4AgmI-pO27mm8D2YR9rWHN_06c_r',
+  url: 'https://gateway.watsonplatform.net/natural-language-understanding/api',
 });
 
 server.listen(port)
