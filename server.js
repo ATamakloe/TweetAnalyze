@@ -70,7 +70,7 @@ let tweetInterval = null;
     tweetInterval = setInterval(async () => {
       let data = await getTermScore(term);
       socket.volatile.emit('sentdata', data);
-    }, 1000 * 5);
+    }, 1000 * 10);
 
   })
 

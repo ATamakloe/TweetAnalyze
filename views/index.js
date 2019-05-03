@@ -61,9 +61,9 @@ function redrawChart() {
 function connectSocket(event) {
   let time = null;
   let now = null;
-  term = document.getElementById("searchfield").value
+  term = document.getElementById("searchfield").value;
   event.preventDefault();
-  document.getElementsByClassName("trackedterm").innerHTML = term;
+  document.getElementById("trackedterm").innerHTML = term;
   if (socket !== null) {
     socket.disconnect();
 
