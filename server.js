@@ -9,10 +9,10 @@ require('dotenv').config()
 
 
 const T = new Twit({
-    consumer_key:'JhNOZghCdH6drNNh8yX7JrsWg',
-    consumer_secret:'2TFhbSVP7flZ1R88LaqWIJmHixOYyYVlek3aTcpWkNv4BD0nDX',
-    access_token:'385219659-EOHwI6QJW3nZnpJE6cgVBDsHRJR7bgryKVD6trXC',
-    access_token_secret:'YmORtry99TAHXzhCKIAPg5jA2JL5vL0TBhSAEKxam7sVK',
+    consumer_key:'10I01p1nPw79k7tcEtfyfZrfz',
+    consumer_secret:'5OoRl6shFaHv0ILABlcbWJot7Zm95F6SuiBPabsL2QS5Kxx46y',
+    access_token:'385219659-xNPtPgpotKObPm8YfFWaubS56IjCbHC9Q4kUGb4U',
+    access_token_secret:'USI7YCc2Sx3I66pffwAe9NT2A40sEZRfDZ2fnHn5ojTKp',
     timeout_ms:60*1000,
     strictSSL:true,
   })
