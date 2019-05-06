@@ -10,7 +10,7 @@ let options = {
     datasets: [
 			{
 				data: chartdata,
-				borderWidth: 1,
+				borderWidth: 2,
         fill: false,
         borderColor: 'rgb(53, 146, 213)',
         backgroundColor:'rgb(53, 146, 213)'
